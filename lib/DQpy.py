@@ -38,8 +38,8 @@ def test_row(row:dict, rule_set, id_by:list=None, verbose=False):  # Test a row 
     for attr, attr_rules in rule_set.items():
         # Test and cast types here
         value = convert_to_type(row[attr], attr_rules["type"])
-        if not value:
-            print(row, " type error")
+        if value == None:
+            print(row, attr, " type error")
         else:
             for rrule in attr_rules["dq rules"]:
                 rule = rrule["rule"]
