@@ -76,5 +76,8 @@ rule_set = {
                             }
              }
         ]
+    },
+    "GLBalanceInReportingCCY": {
+        "type": "float",
     }
 }

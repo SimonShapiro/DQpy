@@ -39,13 +39,15 @@ def test_row(row:dict, rule_set, id_by:list=None, verbose=False):  # Test a row 
         # Test and cast types here
         value = convert_to_type(row[attr], attr_rules["type"])
         if value == None:
-            print(row, attr, " type error")
+            r = CustomRule("Type Error", "Test data type conversion", lambda w, x, y, z: False)  # create failing rule to use results
+            results.append((r(row, attr, row[attr], parameters=None, id_by=id_by)))
         else:
-            for rrule in attr_rules["dq rules"]:
-                rule = rrule["rule"]
-                results.append(rule(row, attr, value,
-                                    parameters=None if "parameters" not in rrule.keys() else rrule["parameters"],
-                                    id_by=id_by))
+            if "dq rules" in attr_rules.keys():
+                for rrule in attr_rules["dq rules"]:
+                    rule = rrule["rule"]
+                    results.append(rule(row, attr, value,
+                                        parameters=None if "parameters" not in rrule.keys() else rrule["parameters"],
+                                        id_by=id_by))
 #    print(results)
     results = list(filter(lambda r: r["Result"] == "Failed", results)) if not verbose else results
     return results  # An array of results
