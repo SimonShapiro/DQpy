@@ -1,3 +1,5 @@
+import pandas
+
 def CustomRule(rule_id:str, rule_desc:str, fn):
     def rule(row:dict, selector:str, value, parameters=None, id_by=None):  #
         passed = fn(row, selector, value, parameters)
@@ -51,3 +53,22 @@ def test_row(row:dict, rule_set, id_by:list=None, verbose=False):  # Test a row 
 #    print(results)
     results = list(filter(lambda r: r["Result"] == "Failed", results)) if not verbose else results
     return results  # An array of results
+
+
+class CSV_Panda_Memory_Store:
+    def __init__(self):
+        self.store = {}
+
+    def _add_to_store(self, filename, sep=",", index_col=None):
+        if filename not in self.store:
+            self.store[filename] = pandas.DataFrame.from_csv(filename, sep=sep, index_col=index_col)
+
+    def lookup_in_csv_store(self, row, selector, value, parameters):
+        file_name = parameters["file"]
+        self._add_to_store(file_name, sep=",", index_col=None) # do noting if it is already there
+        search_col = parameters["col"]
+        if not pandas.isnull(value):
+            passed = value in self.store[file_name][search_col].unique()
+        else:
+            passed = False
+        return passed

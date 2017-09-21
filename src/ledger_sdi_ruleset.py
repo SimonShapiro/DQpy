@@ -23,7 +23,7 @@ rule_set = {
         "dq rules": [
             {"rule": Rule_001},
             {"rule": CR_004, "parameters":{"list":["'4435'"]}},  #This should be a call to an authatative source
-            {"rule": CR_002, "parameters":{"file":"/Users/simonshapiro/DQpy/data/company_codes.csv",
+            {"rule": CR_005, "parameters":{"file":"/Users/simonshapiro/DQpy/data/company_codes.csv",
                                     "col": "SaracenCode"}
              },  #This should be a call to an authatative source
         ]
@@ -59,7 +59,7 @@ rule_set = {
         "type": "string",
         "dq rules": [
             {"rule":Rule_001, "parameters":{}},
-            {"rule":CR_002, "parameters": {
+            {"rule":CR_005, "parameters": {
                                 "file": "/Users/simonshapiro/DQpy/data/currency_codes.csv",
                                 "col": "Alphabetic Code"
                             }
@@ -70,11 +70,11 @@ rule_set = {
         "type": "string",
         "dq rules": [
             {"rule":Rule_001, "parameters":{}},
-            {"rule":CR_002, "parameters": {
-                                "file": "/Users/simonshapiro/DQpy/data/currency_codes.csv",
-                                "col": "Alphabetic Code"
-                            }
-             }
+             {"rule": CR_005, "parameters": {
+                 "file": "/Users/simonshapiro/DQpy/data/currency_codes.csv",
+                 "col": "Alphabetic Code"
+                }
+            }
         ]
     },
     "GLBalanceInReportingCCY": {

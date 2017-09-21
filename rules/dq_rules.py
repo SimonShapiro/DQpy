@@ -52,3 +52,7 @@ CR_003 = CustomRule("CR_003", "Test for sign of balance in account", test_balanc
 
 
 CR_004 = CustomRule("CR_004", "Test for value in list", lambda row, selector, value, parameters: value in parameters["list"])
+
+csv_store = CSV_Panda_Memory_Store()
+
+CR_005 = CustomRule("CR_005", "Setup and test in with memory csv store", csv_store.lookup_in_csv_store)

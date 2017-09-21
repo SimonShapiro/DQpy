@@ -4,43 +4,43 @@ Type Error,Test data type conversion,GLBalanceInReportingCCY,367922.137a,Failed,
 CR_003,Test for sign of balance in account,GLBalance,-999.99,Failed,B,HUBAU,'4435',,AUHBAP,03404-A,AUD,-999.99,T,AS40306,-950.623,AUD
 Rule_001,Test for blank,LegalEntity,,Failed,B,HUBAU,,,AUHBAP,06413-L,AUD,-251780.78,T,ZZ41246,-266514.437,AUD
 CR_004,Test for value in list,LegalEntity,,Failed,B,HUBAU,,,AUHBAP,06413-L,AUD,-251780.78,T,ZZ41246,-266514.437,AUD
-CR_002,Test against reference csv,LegalEntity,,Failed,B,HUBAU,,,AUHBAP,06413-L,AUD,-251780.78,T,ZZ41246,-266514.437,AUD
+CR_005,Setup and test in with memory csv store,LegalEntity,,Failed,B,HUBAU,,,AUHBAP,06413-L,AUD,-251780.78,T,ZZ41246,-266514.437,AUD
 Rule_001,Test for blank,RecordType,,Failed,,HUBAU,'4435',,AUHBAP,06758-L,AUD,-164781.37,T,XA97065,-159472.647,AUD
 CR_001,Test regex,RecordType,,Failed,,HUBAU,'4435',,AUHBAP,06758-L,AUD,-164781.37,T,XA97065,-159472.647,AUD
 Rule_001,Test for blank,LegalEntity,,Failed,B,HUBAU,,,AUHBAP,00366-L,AUD,-158247.19,T,FD88378,-184802.748,AUD
 CR_004,Test for value in list,LegalEntity,,Failed,B,HUBAU,,,AUHBAP,00366-L,AUD,-158247.19,T,FD88378,-184802.748,AUD
-CR_002,Test against reference csv,LegalEntity,,Failed,B,HUBAU,,,AUHBAP,00366-L,AUD,-158247.19,T,FD88378,-184802.748,AUD
+CR_005,Setup and test in with memory csv store,LegalEntity,,Failed,B,HUBAU,,,AUHBAP,00366-L,AUD,-158247.19,T,FD88378,-184802.748,AUD
 CR_004,Test for value in list,SourceSystemId,HBEU,Failed,B,HBEU,'4435',,AUHBAP,05609-L,AUD,-66798.14,T,FC05267,-57044.519,AUD
 Rule_001,Test for blank,GLKey,,Failed,B,HUBAU,'4435',,AUHBAP,,xxx,108041.28,B,KU41120,-108041.28,AUD
 CR_001,Test regex,GLKey,,Failed,B,HUBAU,'4435',,AUHBAP,,xxx,108041.28,B,KU41120,-108041.28,AUD
 CR_003,Test for sign of balance in account,GLBalance,108041.28,Failed,B,HUBAU,'4435',,AUHBAP,,xxx,108041.28,B,KU41120,-108041.28,AUD
-CR_002,Test against reference csv,GLBalanceCurrencyCode,xxx,Failed,B,HUBAU,'4435',,AUHBAP,,xxx,108041.28,B,KU41120,-108041.28,AUD
+CR_005,Setup and test in with memory csv store,GLBalanceCurrencyCode,xxx,Failed,B,HUBAU,'4435',,AUHBAP,,xxx,108041.28,B,KU41120,-108041.28,AUD
 Rule_001,Test for blank,GroupReconciliationKey,,Failed,B,HUBAU,'4435',,AUHBAP,08769-L,AUD,-1919212.33,T,,-1906197.396,AUD
 CR_001,Test regex,GroupReconciliationKey,,Failed,B,HUBAU,'4435',,AUHBAP,08769-L,AUD,-1919212.33,T,,-1906197.396,AUD
-CR_002,Test against reference csv,GLBalanceCurrencyCode,xxx,Failed,B,HUBAU,'4435',,AUHBAP,01716-L,xxx,-54636.54,T,CB15565,54636.54,AUD
+CR_005,Setup and test in with memory csv store,GLBalanceCurrencyCode,xxx,Failed,B,HUBAU,'4435',,AUHBAP,01716-L,xxx,-54636.54,T,CB15565,54636.54,AUD
 Rule_001,Test for blank,LegalEntity,,Failed,B,HUBAU,,,,09938-A,AUD,136024.94,B,MD01866,148970.473,AUD
 CR_004,Test for value in list,LegalEntity,,Failed,B,HUBAU,,,,09938-A,AUD,136024.94,B,MD01866,148970.473,AUD
-CR_002,Test against reference csv,LegalEntity,,Failed,B,HUBAU,,,,09938-A,AUD,136024.94,B,MD01866,148970.473,AUD
+CR_005,Setup and test in with memory csv store,LegalEntity,,Failed,B,HUBAU,,,,09938-A,AUD,136024.94,B,MD01866,148970.473,AUD
 CR_001,Test regex,RecordType,X,Failed,X,HUBAU,'4435',,AUHBAP,07791-L,AUD,-350354.03,B,QV35133,-387944.266,AUD
 CR_001,Test regex,GroupReconciliationKey,AA00,Failed,B,HUBAU,'4435',,AUHBAP,08534-L,AUD,-42581.45,B,AA00,-41177.402,AUD
 Rule_001,Test for blank,GroupReconciliationKey,,Failed,B,HUBAU,'4435',,AUHBAP,04050-L,AUD,-18595.0,B,,-18762.633,xxx
 CR_001,Test regex,GroupReconciliationKey,,Failed,B,HUBAU,'4435',,AUHBAP,04050-L,AUD,-18595.0,B,,-18762.633,xxx
-CR_002,Test against reference csv,ReportingBalanceCurrencyCode,xxx,Failed,B,HUBAU,'4435',,AUHBAP,04050-L,AUD,-18595.0,B,,-18762.633,xxx
+CR_005,Setup and test in with memory csv store,ReportingBalanceCurrencyCode,xxx,Failed,B,HUBAU,'4435',,AUHBAP,04050-L,AUD,-18595.0,B,,-18762.633,xxx
 Rule_001,Test for blank,BankingORTradingBook,,Failed,B,HUBAU,'4435',,AUHBAP,01237-L,SGD,-101629.53,,XA44145,-102720.523,AUD
 CR_004,Test for value in list,BankingORTradingBook,,Failed,B,HUBAU,'4435',,AUHBAP,01237-L,SGD,-101629.53,,XA44145,-102720.523,AUD
 Rule_001,Test for blank,BankingORTradingBook,,Failed,B,HUBAU,'4435',,AUHBAP,07792-L,AUD,-83447.89,,UR27277,-96991.697,AUD
 CR_004,Test for value in list,BankingORTradingBook,,Failed,B,HUBAU,'4435',,AUHBAP,07792-L,AUD,-83447.89,,UR27277,-96991.697,AUD
 CR_003,Test for sign of balance in account,GLBalance,-999.99,Failed,B,HUBAU,'4435',,AUHBAP,02713-A,AUD,-999.99,B,DS64360,-1196.553,AUD
 Rule_001,Test for blank,GLBalanceCurrencyCode,,Failed,B,HUBAU,'4435',,AUHBAP,02852-A,,28416.34,B,WV59292,-28416.34,AUD
-CR_002,Test against reference csv,GLBalanceCurrencyCode,,Failed,B,HUBAU,'4435',,AUHBAP,02852-A,,28416.34,B,WV59292,-28416.34,AUD
+CR_005,Setup and test in with memory csv store,GLBalanceCurrencyCode,,Failed,B,HUBAU,'4435',,AUHBAP,02852-A,,28416.34,B,WV59292,-28416.34,AUD
 Rule_001,Test for blank,GLKey,,Failed,B,HUBAU,'4435',,AUHBAP,,AUD,255530.9,T,ZF64158,254041.056,AUD
 CR_001,Test regex,GLKey,,Failed,B,HUBAU,'4435',,AUHBAP,,AUD,255530.9,T,ZF64158,254041.056,AUD
 CR_003,Test for sign of balance in account,GLBalance,255530.9,Failed,B,HUBAU,'4435',,AUHBAP,,AUD,255530.9,T,ZF64158,254041.056,AUD
 Rule_001,Test for blank,GLBalanceCurrencyCode,,Failed,B,HUBAU,'4435',,AUHBAP,07098-A,,148201.31,B,DT84846,-148201.31,AUD
-CR_002,Test against reference csv,GLBalanceCurrencyCode,,Failed,B,HUBAU,'4435',,AUHBAP,07098-A,,148201.31,B,DT84846,-148201.31,AUD
+CR_005,Setup and test in with memory csv store,GLBalanceCurrencyCode,,Failed,B,HUBAU,'4435',,AUHBAP,07098-A,,148201.31,B,DT84846,-148201.31,AUD
 Rule_001,Test for blank,LegalEntity,,Failed,B,HUBAU,,,AUHBAP,00147-L,AUD,-62851.99,B,BE71182,-67326.64,AUD
 CR_004,Test for value in list,LegalEntity,,Failed,B,HUBAU,,,AUHBAP,00147-L,AUD,-62851.99,B,BE71182,-67326.64,AUD
-CR_002,Test against reference csv,LegalEntity,,Failed,B,HUBAU,,,AUHBAP,00147-L,AUD,-62851.99,B,BE71182,-67326.64,AUD
+CR_005,Setup and test in with memory csv store,LegalEntity,,Failed,B,HUBAU,,,AUHBAP,00147-L,AUD,-62851.99,B,BE71182,-67326.64,AUD
 CR_001,Test regex,GLKey,03400-x,Failed,B,HUBAU,'4435',,AUHBAP,03400-x,AUD,6154.74,B,XL30617,6492.345,AUD
 CR_003,Test for sign of balance in account,GLBalance,6154.74,Failed,B,HUBAU,'4435',,AUHBAP,03400-x,AUD,6154.74,B,XL30617,6492.345,AUD
 Rule_001,Test for blank,GroupReconciliationKey,,Failed,B,HUBAU,'4435',,AUHBAP,04335-A,AUD,497295.02,T,,529787.879,AUD
@@ -48,11 +48,11 @@ CR_001,Test regex,GroupReconciliationKey,,Failed,B,HUBAU,'4435',,AUHBAP,04335-A,
 Rule_001,Test for blank,BankingORTradingBook,,Failed,B,HUBAU,'4435',,AUHBAP,01312-A,AUD,984284.41,,JL65272,1109204.057,AUD
 CR_004,Test for value in list,BankingORTradingBook,,Failed,B,HUBAU,'4435',,AUHBAP,01312-A,AUD,984284.41,,JL65272,1109204.057,AUD
 Rule_001,Test for blank,ReportingBalanceCurrencyCode,,Failed,B,HUBAU,'4435',,AUHBAP,04544-L,AUD,-999.99,B,DI47733,-1034.272,
-CR_002,Test against reference csv,ReportingBalanceCurrencyCode,,Failed,B,HUBAU,'4435',,AUHBAP,04544-L,AUD,-999.99,B,DI47733,-1034.272,
+CR_005,Setup and test in with memory csv store,ReportingBalanceCurrencyCode,,Failed,B,HUBAU,'4435',,AUHBAP,04544-L,AUD,-999.99,B,DI47733,-1034.272,
 CR_004,Test for value in list,SourceSystemId,HBEU,Failed,B,HBEU,'4435',,AUHBAP,08452-A,AUD,28561.71,B,QT43676,27605.462,AUD
 CR_001,Test regex,GLKey,03400-x,Failed,B,HUBAU,'4435',,AUHBAP,03400-x,CNY,865774.47,T,AH52566,4554868.789,xxx
 CR_003,Test for sign of balance in account,GLBalance,865774.47,Failed,B,HUBAU,'4435',,AUHBAP,03400-x,CNY,865774.47,T,AH52566,4554868.789,xxx
-CR_002,Test against reference csv,ReportingBalanceCurrencyCode,xxx,Failed,B,HUBAU,'4435',,AUHBAP,03400-x,CNY,865774.47,T,AH52566,4554868.789,xxx
+CR_005,Setup and test in with memory csv store,ReportingBalanceCurrencyCode,xxx,Failed,B,HUBAU,'4435',,AUHBAP,03400-x,CNY,865774.47,T,AH52566,4554868.789,xxx
 Rule_001,Test for blank,SourceSystemId,,Failed,B,,'4435',,AUHBAP,02888-A,AUD,115391.92,T,TR97919,122627.429,AUD
 CR_004,Test for value in list,SourceSystemId,,Failed,B,,'4435',,AUHBAP,02888-A,AUD,115391.92,T,TR97919,122627.429,AUD
 Rule_001,Test for blank,BankingORTradingBook,,Failed,B,HUBAU,'4435',,AUHBAP,08702-A,AUD,658709.44,,UU68287,599259.111,AUD
@@ -62,20 +62,20 @@ CR_001,Test regex,GLKey,,Failed,B,HUBAU,'4435',,,,AUD,1006296.84,B,BB45094,86984
 CR_003,Test for sign of balance in account,GLBalance,1006296.84,Failed,B,HUBAU,'4435',,,,AUD,1006296.84,B,BB45094,869840.982,AUD
 Rule_001,Test for blank,LegalEntity,,Failed,B,HUBAU,,,AUHBAP,03471-L,AUD,-826314.95,B,KD39232,-739063.373,AUD
 CR_004,Test for value in list,LegalEntity,,Failed,B,HUBAU,,,AUHBAP,03471-L,AUD,-826314.95,B,KD39232,-739063.373,AUD
-CR_002,Test against reference csv,LegalEntity,,Failed,B,HUBAU,,,AUHBAP,03471-L,AUD,-826314.95,B,KD39232,-739063.373,AUD
+CR_005,Setup and test in with memory csv store,LegalEntity,,Failed,B,HUBAU,,,AUHBAP,03471-L,AUD,-826314.95,B,KD39232,-739063.373,AUD
 Rule_001,Test for blank,RecordType,,Failed,,HUBAU,'4435',,AUHBAP,04086-L,AUD,-383314.43,T,MK52596,-318787.384,AUD
 CR_001,Test regex,RecordType,,Failed,,HUBAU,'4435',,AUHBAP,04086-L,AUD,-383314.43,T,MK52596,-318787.384,AUD
 Rule_001,Test for blank,RecordType,,Failed,,HUBAU,'4435',,AUHBAP,04071-L,AUD,-999.99,T,AN76509,-945.888,AUD
 CR_001,Test regex,RecordType,,Failed,,HUBAU,'4435',,AUHBAP,04071-L,AUD,-999.99,T,AN76509,-945.888,AUD
 Rule_001,Test for blank,GLBalanceCurrencyCode,,Failed,B,HUBAU,'4435',,AUHBAP,02071-L,,-361573.18,T,EF87171,361573.18,AUD
-CR_002,Test against reference csv,GLBalanceCurrencyCode,,Failed,B,HUBAU,'4435',,AUHBAP,02071-L,,-361573.18,T,EF87171,361573.18,AUD
+CR_005,Setup and test in with memory csv store,GLBalanceCurrencyCode,,Failed,B,HUBAU,'4435',,AUHBAP,02071-L,,-361573.18,T,EF87171,361573.18,AUD
 Rule_001,Test for blank,GroupReconciliationKey,,Failed,B,HUBAU,'4435',,AUHBAP,02781-L,SGD,-379310.42,B,,-436142.264,AUD
 CR_001,Test regex,GroupReconciliationKey,,Failed,B,HUBAU,'4435',,AUHBAP,02781-L,SGD,-379310.42,B,,-436142.264,AUD
 CR_004,Test for value in list,SourceSystemId,HBEU,Failed,B,HBEU,'4435',,AUHBAP,03759-A,AUD,2070709.0,B,WJ12480,2014541.579,AUD
 Rule_001,Test for blank,ReportingBalanceCurrencyCode,,Failed,B,HUBAU,'4435',,AUHBAP,06534-L,AUD,-1732829.51,T,VT25732,-1636068.386,
-CR_002,Test against reference csv,ReportingBalanceCurrencyCode,,Failed,B,HUBAU,'4435',,AUHBAP,06534-L,AUD,-1732829.51,T,VT25732,-1636068.386,
+CR_005,Setup and test in with memory csv store,ReportingBalanceCurrencyCode,,Failed,B,HUBAU,'4435',,AUHBAP,06534-L,AUD,-1732829.51,T,VT25732,-1636068.386,
 Rule_001,Test for blank,ReportingBalanceCurrencyCode,,Failed,B,HUBAU,'4435',,AUHBAP,05042-A,AUD,329966.58,B,FH78769,319116.954,
-CR_002,Test against reference csv,ReportingBalanceCurrencyCode,,Failed,B,HUBAU,'4435',,AUHBAP,05042-A,AUD,329966.58,B,FH78769,319116.954,
+CR_005,Setup and test in with memory csv store,ReportingBalanceCurrencyCode,,Failed,B,HUBAU,'4435',,AUHBAP,05042-A,AUD,329966.58,B,FH78769,319116.954,
 Rule_001,Test for blank,SourceSystemId,,Failed,B,,'4435',,AUHBAP,02523-A,AUD,125909.03,,CM95739,147072.021,AUD
 CR_004,Test for value in list,SourceSystemId,,Failed,B,,'4435',,AUHBAP,02523-A,AUD,125909.03,,CM95739,147072.021,AUD
 Rule_001,Test for blank,BankingORTradingBook,,Failed,B,,'4435',,AUHBAP,02523-A,AUD,125909.03,,CM95739,147072.021,AUD
